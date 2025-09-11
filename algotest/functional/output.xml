@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.13.5 on win32)" generated="2025-09-11T18:59:46.093122" rpa="false" schemaversion="5">
+<suite id="s1" name="Basic F Test" source="D:\mindmerge\algotest\functional\basic_f_test.robot">
+<test id="s1-t1" name="TC-01 Verify homepage loads" line="8">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-09-11T18:59:46.495328" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "D:\\mindmerge\\algotest\\functional\\browser\\traces\\temp\\cb87ead0-7c92-4f42-97f8-a08f30cc4dab"}</msg>
+<msg time="2025-09-11T18:59:46.544932" level="INFO">Starting Browser process C:\Users\HP\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\index.js using at 127.0.0.1:62348</msg>
+<msg time="2025-09-11T18:59:48.681543" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"D:\\mindmerge\\algotest\\functional\\browser\\traces\\temp\\cb87ead0-7c92-4f42-97f8-a08f30cc4dab"}</msg>
+<arg>chromium</arg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-09-11T18:59:46.493536" elapsed="2.188361"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-09-11T18:59:53.433165" level="INFO">Successfully initialized new page object and opened url: https://algotest.in/</msg>
+<msg time="2025-09-11T18:59:53.433260" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>${URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-09-11T18:59:48.686289" elapsed="4.747193"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-09-11T18:59:54.317431" level="INFO">Text: 'AlgoTest\n\nAlgo Trading\n\nDiscretionary\n\nIndicator Algo\n\nResources + Tools\n\nPricing\n\nPartnership\n\nLogin\nSign Up\nDoing well in Options Trading means \nBacktesting.\nForward Testing.\nAlgo Trading.\n\nDo it all on AlgoTest. 45+ Brokers Integrated.\n\n+41 more *\n\nGet 25 Free Backtests\n\nBacked by\n\n40M+\n\nBacktests done\n\n39M+\n\nTrades taken\n\n30,000+\n\nTraders\n\n35,000+\n\nCommunity Members\n\nYour complete toolkit\nAll Products\nAlgo Trading\nDiscretionary Trading\nIndicator Algo Trading\n\nA suite of products covering testing on historical data, execution in the live market, analysis, and algo trading—available on a single platform.\n\nBacktest\n\nTest your strategy on years of data with slippage and brokerage for realistic results.\n\nLearn more\n\nRA Algos\n\nUse strategies by SEBI-registered RAs and automate them with full transparency.\n\nLearn more\n\nAlgo Trade\n\nDeploy your strategy live and let it auto-execute trades via your broker account.\n\nLearn more\n\nForward Test\n\nRun your strategy on live market data without real trades to validate performance.\n\nLearn more\n\nTrading View Signals\n\nConnect TradingView alerts to trigger and automate trades in real time.\n\nLearn more\n\nChartInk Signals\n\nAuto-execute trades using alerts from Chartink scanners via webhooks.\n\nLearn more\n\nStrategy Builder\n\nBuild trading strategies without code. Use indicators and logic blocks easily.\n\nLearn more\n\nSimulator\n\nSimulate trading outcomes based on market moves, bet size, and risk over time.\n\nLearn more\n\nThe AlgoTest Advantage\n\nFeatures which make AlgoTest the best place for all your trading.\n\nSimple, Fast, &amp; Free Templates\nyou can use everyday\n\nGet started with just a click.\n\nSuper fast Backtesting speeds,\nfor FREE\n\nBacktest on over 5 years of historical data. Super Fast.\n\nSeamless execution of strategies\nwith a single click\n\nSave your strategies for simple and fast execution.\n\nRetail Traders ❤️ AlgoTest\n\nAlgoTest is, hands down, the best algo trading platform in India today. Initially considered calling it "one of the best," but my experience has convinced me otherwise\n— it\'s simply the best\nIf one is looking for a platform that truly understands how option trader trades, AlgoTest is the one. Separating signal from strategy is a design beauty.\n\nDhiraj Sinha\n\nFounder and Managing Partner - Quantum Wealth Management LLP\n\nCurrently it is best platform for algo traders.\nCharges are very low as compared to other platforms. Main thing is execution is good. Have been using since 1 year. Only minus point is currently they don\'t support commodity. Hope so that will come soon.\n\nSahil Kumar\n\nAlgoTest User\n\nI\'ve been collaborating with Raghav Malik for a while now, and I genuinely believe that for any serious trader or investor, automation has become essential.\nThe days of manually punching in orders are long behind us. As a systematic/quant-based research analyst,\nI find AlgoTest to be one of the\nmost robust and versatile platforms available in the market.\n\nSandeep Rao\n\nSEBI Registered Research Analyst\n\nOne of the big differentiator between HFT and non-HFT first is the tools and technology used by HFT.\nThanks for one step towards democratising this.\n\nVivek Gadodia\n\nFounder - RBT Algo Systems\n\nBig shout out to AlgoTest for creating an amazing platform,\nbacktest and go live with any strategy seamlessly with a click of a button.\n\nTheoptionseller (GG)\n\nFounder - MoneyPlant Wealth Management\n\nIndia\'s no 1 algo trading platform.\nTrade execution is smooth. AlgoTest support team is very good. Interface is very seamless and smooth.. one more thing charges are very low..😍😍😍\n\nNav G\n\nAlgoTest User\n\nHats off to @AlgoTest_in for powering Indian options traders with a no-code algo-trading ecosystem that bridges the gap with institutional-grade—and high-frequency—tools.\nFrom backtesting to live execution, your technology is democratizing advanced trading. Kudos!\n\nManish Malhotra\n\n17 + Years Experience | Managing 100 + Algo Traders\n\nTake the next step.\n\nAnalyse • Backtest •\xa0Simulate • Forward Test • Trade\n\nGet Started for FREE\n\nQuick Links\n\nPaper Trading\nF&amp;O Margin Calculator\nWhat is Algo Trading?\nQuantitative Trading\nFutures and Options\nFinnifty\nWhat is Options Trading?\nOptions Chart\nForex Trading in India\nBank Nifty\nNifty Midcap 100\nAlgoTest vs Quantiply\nNSE, BSE Trading Stock Market Holidays\nBanknifty Options Chart\nNifty Options Chart\nMidcap Nifty Options Chart\nFinnifty Options Chart\nSensex Options Chart\nFinnifty Options Chain\nFinnifty Index Chart\nBanknifty Index Chart\nNifty Index Chart\nMidcap Nifty Index Chart\nBankex Index Chart\nSensex Index Chart\nBlack Scholes\nVirtual Coin Tosser\nAlgoTest\nsupport@algotest.in\nBacked by\nIntegration Partner\n\nAlgo Trading\n\nBacktest\nForward Test\nLive Trade\nRA Algos\n\nIndicator Algo\n\nTradingView\nChartInk\nPine Scripts\nDiscretionary\nSimulator\nStrategy Builder\n\nCommunity\n\nTelegram\n\nResources\n\nFeatures\nPricing\nEducation\nAlgo Trading Course\nAlgo Trading Webinar\nBlog\nAlgoTest Guide\n\nCompany\n\nAbout Us\nTerms &amp; Conditions\nPrivacy Policy\nCancellation &amp;\nRefund Policy\nCareers\nSignup for 25 Free Backtest\nSign Up\nLog In\n© 2025 All rights reserved. Oraph Private Limited.\n\n*All trade marks, logos, and brand names displayed on this platform are the property of their respective owners and are used here strictly for informational purposes.'</msg>
+<msg time="2025-09-11T18:59:54.318281" level="INFO">${result} = AlgoTest
+
+Algo Trading
+
+Discretionary
+
+Indicator Algo
+
+Resources + Tools
+
+Pricing
+
+Partnership
+
+Login
+Sign Up
+Doing well in Options Trading means 
+Backtesting.
+Forward Testing.
+Algo Trading.
+
+Do it al...</msg>
+<var>${result}</var>
+<arg>body</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-09-11T18:59:53.434031" elapsed="0.884420"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<msg time="2025-09-11T18:59:54.324453" level="FAIL">'AlgoTest
+
+Algo Trading
+
+Discretionary
+
+Indicator Algo
+
+Resources + Tools
+
+Pricing
+
+Partnership
+
+Login
+Sign Up
+Doing well in Options Trading means 
+Backtesting.
+Forward Testing.
+Algo Trading.
+
+Do it all on AlgoTest. 45+ Brokers Integrated.
+
++41 more *
+
+Get 25 Free Backtests
+
+Backed by
+
+40M+
+
+Backtests done
+
+39M+
+
+Trades taken
+
+30,000+
+
+Traders
+
+35,000+
+
+Community Members
+
+Your complete toolkit
+All Products
+Algo Trading
+Discretionary Trading
+Indicator Algo Trading
+
+A suite of products covering testing on historical data, execution in the live market, analysis, and algo trading—available on a single platform.
+
+Backtest
+
+Test your strategy on years of data with slippage and brokerage for realistic results.
+
+Learn more
+
+RA Algos
+
+Use strategies by SEBI-registered RAs and automate them with full transparency.
+
+Learn more
+
+Algo Trade
+
+Deploy your strategy live and let it auto-execute trades via your broker account.
+
+Learn more
+
+Forward Test
+
+Run your strategy on live market data without real trades to validate performance.
+
+Learn more
+
+Trading View Signals
+
+Connect TradingView alerts to trigger and automate trades in real time.
+
+Learn more
+
+ChartInk Signals
+
+Auto-execute trades using alerts from Chartink scanners via webhooks.
+
+Learn more
+
+Strategy Builder
+
+Build trading strategies without code. Use indicators and logic blocks easily.
+
+Learn more
+
+Simulator
+
+Simulate trading outcomes based on market moves, bet size, and risk over time.
+
+Learn more
+
+The AlgoTest Advantage
+
+Features which make AlgoTest the best place for all your trading.
+
+Simple, Fast, &amp; Free Templates
+you can use everyday
+
+Get started with just a click.
+
+Super fast Backtesting speeds,
+for FREE
+
+Backtest on over 5 years of historical data. Super Fast.
+
+Seamless execution of strategies
+with a single click
+
+Save your strategies for simple and fast execution.
+
+Retail Traders ❤️ AlgoTest
+
+AlgoTest is, hands down, the best algo trading platform in India today. Initially considered calling it "one of the best," but my experience has convinced me otherwise
+— it's simply the best
+If one is looking for a platform that truly understands how option trader trades, AlgoTest is the one. Separating signal from strategy is a design beauty.
+
+Dhiraj Sinha
+
+Founder and Managing Partner - Quantum Wealth Management LLP
+
+Currently it is best platform for algo traders.
+Charges are very low as compared to other platforms. Main thing is execution is good. Have been using since 1 year. Only minus point is currently they don't support commodity. Hope so that will come soon.
+
+Sahil Kumar
+
+AlgoTest User
+
+I've been collaborating with Raghav Malik for a while now, and I genuinely believe that for any serious trader or investor, automation has become essential.
+The days of manually punching in orders are long behind us. As a systematic/quant-based research analyst,
+I find AlgoTest to be one of the
+most robust and versatile platforms available in the market.
+
+Sandeep Rao
+
+SEBI Registered Research Analyst
+
+One of the big differentiator between HFT and non-HFT first is the tools and technology used by HFT.
+Thanks for one step towards democratising this.
+
+Vivek Gadodia
+
+Founder - RBT Algo Systems
+
+Big shout out to AlgoTest for creating an amazing platform,
+backtest and go live with any strategy seamlessly with a click of a button.
+
+Theoptionseller (GG)
+
+Founder - MoneyPlant Wealth Management
+
+India's no 1 algo trading platform.
+Trade execution is smooth. AlgoTest support team is very good. Interface is very seamless and smooth.. one more thing charges are very low..😍😍😍
+
+Nav G
+
+AlgoTest User
+
+Hats off to @AlgoTest_in for powering Indian options traders with a no-code algo-trading ecosystem that bridges the gap with institutional-grade—and high-frequency—tools.
+From backtesting to live execution, your technology is democratizing advanced trading. Kudos!
+
+Manish Malhotra
+
+17 + Years Experience | Managing 100 + Algo Traders
+
+Take the next step.
+
+Analyse • Backtest • Simulate • Forward Test • Trade
+
+Get Started for FREE
+
+Quick Links
+
+Paper Trading
+F&amp;O Margin Calculator
+What is Algo Trading?
+Quantitative Trading
+Futures and Options
+Finnifty
+What is Options Trading?
+Options Chart
+Forex Trading in India
+Bank Nifty
+Nifty Midcap 100
+AlgoTest vs Quantiply
+NSE, BSE Trading Stock Market Holidays
+Banknifty Options Chart
+Nifty Options Chart
+Midcap Nifty Options Chart
+Finnifty Options Chart
+Sensex Options Chart
+Finnifty Options Chain
+Finnifty Index Chart
+Banknifty Index Chart
+Nifty Index Chart
+Midcap Nifty Index Chart
+Bankex Index Chart
+Sensex Index Chart
+Black Scholes
+Virtual Coin Tosser
+AlgoTest
+support@algotest.in
+Backed by
+Integration Partner
+
+Algo Trading
+
+Backtest
+Forward Test
+Live Trade
+RA Algos
+
+Indicator Algo
+
+TradingView
+ChartInk
+Pine Scripts
+Discretionary
+Simulator
+Strategy Builder
+
+Community
+
+Telegram
+
+Resources
+
+Features
+Pricing
+Education
+Algo Trading Course
+Algo Trading Webinar
+Blog
+AlgoTest Guide
+
+Company
+
+About Us
+Terms &amp; Conditions
+Privacy Policy
+Cancellation &amp;
+Refund Policy
+Careers
+Signup for 25 Free Backtest
+Sign Up
+Log In
+© 2025 All rights reserved. Oraph Private Limited.
+
+*All trade marks, logos, and brand names displayed on this platform are the property of their respective owners and are used here strictly for informational purposes.' does not contain 'algoTest'</msg>
+<arg>${result}</arg>
+<arg>algoTest</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="FAIL" start="2025-09-11T18:59:54.323021" elapsed="0.002073">'AlgoTest
+
+Algo Trading
+
+Discretionary
+
+Indicator Algo
+
+Resources + Tools
+
+Pricing
+
+Partnership
+
+Login
+Sign Up
+Doing well in Options Trading means 
+Backtesting.
+Forward Testing.
+Algo Trading.
+    [ Message content over the limit has been removed. ]
+Algo Trading Webinar
+Blog
+AlgoTest Guide
+
+Company
+
+About Us
+Terms &amp; Conditions
+Privacy Policy
+Cancellation &amp;
+Refund Policy
+Careers
+Signup for 25 Free Backtest
+Sign Up
+Log In
+© 2025 All rights reserved. Oraph Private Limited.
+
+*All trade marks, logos, and brand names displayed on this platform are the property of their respective owners and are used here strictly for informational purposes.' does not contain 'algoTest'</status>
+</kw>
+<kw name="Close Browser" owner="Browser">
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2025-09-11T18:59:54.327437" elapsed="0.000672"/>
+</kw>
+<msg time="2025-09-11T18:59:54.537631" level="INFO">Switching context to context=8e218003-fe33-4508-898a-a970374f0a69 in CURRENT</msg>
+<msg time="2025-09-11T18:59:54.568997" level="INFO">Successfully changed active context: context=8e218003-fe33-4508-898a-a970374f0a69</msg>
+<msg time="2025-09-11T18:59:54.695140" level="INFO">Successfully closed Context</msg>
+<status status="FAIL" start="2025-09-11T18:59:46.491625" elapsed="7.837920">'AlgoTest
+
+Algo Trading
+
+Discretionary
+
+Indicator Algo
+
+Resources + Tools
+
+Pricing
+
+Partnership
+
+Login
+Sign Up
+Doing well in Options Trading means 
+Backtesting.
+Forward Testing.
+Algo Trading.
+    [ Message content over the limit has been removed. ]
+Algo Trading Webinar
+Blog
+AlgoTest Guide
+
+Company
+
+About Us
+Terms &amp; Conditions
+Privacy Policy
+Cancellation &amp;
+Refund Policy
+Careers
+Signup for 25 Free Backtest
+Sign Up
+Log In
+© 2025 All rights reserved. Oraph Private Limited.
+
+*All trade marks, logos, and brand names displayed on this platform are the property of their respective owners and are used here strictly for informational purposes.' does not contain 'algoTest'</status>
+</test>
+<test id="s1-t2" name="TC-02 Verify navigation to Features" line="15">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-09-11T18:59:54.748480" level="INFO">Switching browser to browser=be63118a-4d2e-4a88-a4a5-b53b75e1b859</msg>
+<msg time="2025-09-11T18:59:54.752981" level="INFO">Successfully changed active browser: browser=be63118a-4d2e-4a88-a4a5-b53b75e1b859</msg>
+<msg time="2025-09-11T18:59:54.753222" level="INFO">Reusing existing browser with id: browser=be63118a-4d2e-4a88-a4a5-b53b75e1b859</msg>
+<arg>chromium</arg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-09-11T18:59:54.746854" elapsed="0.006621"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-09-11T18:59:59.191318" level="INFO">Successfully initialized new page object and opened url: https://algotest.in/</msg>
+<msg time="2025-09-11T18:59:59.191458" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>${URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-09-11T18:59:54.754862" elapsed="4.436909"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-09-11T18:59:59.193533" level="INFO">Clicks the element 'role=link[name="Features"]'.</msg>
+<arg>role=link[name="Features"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-09-11T18:59:59.192447" elapsed="1.303392"/>
+</kw>
+<kw name="Get Url" owner="Browser">
+<msg time="2025-09-11T19:00:00.511142" level="INFO">${url} = https://algotest.in/#features</msg>
+<var>${url}</var>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the current URL.</doc>
+<status status="PASS" start="2025-09-11T19:00:00.503998" elapsed="0.007261"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${url}</arg>
+<arg>features</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-09-11T19:00:00.512228" elapsed="0.000946"/>
+</kw>
+<kw name="Close Browser" owner="Browser">
+<msg time="2025-09-11T19:00:01.555373" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-09-11T19:00:00.513814" elapsed="1.041989"/>
+</kw>
+<status status="PASS" start="2025-09-11T18:59:54.732979" elapsed="6.823664"/>
+</test>
+<status status="FAIL" start="2025-09-11T18:59:46.095782" elapsed="15.477735"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Basic F Test" id="s1" pass="1" fail="1" skip="0">Basic F Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
