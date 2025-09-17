@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.13.5 on win32)" generated="2025-09-17T17:35:39.253813" rpa="false" schemaversion="5">
+<suite id="s1" name="Pass" source="D:\mindmerge\algotest\functional\Forgot_pass\pass.robot">
+<test id="s1-t1" name="Verify End-to-End Password Reset Flow" line="12">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-09-17T17:35:41.913127" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "D:\\mindmerge\\algotest\\functional\\Forgot_pass\\browser\\traces\\temp\\0f4bae9a-138f-4c6f-87ad-96cd35c33ffb"}</msg>
+<msg time="2025-09-17T17:35:42.154065" level="INFO">Starting Browser process C:\Users\HP\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\index.js using at 127.0.0.1:61958</msg>
+<msg time="2025-09-17T17:35:46.586874" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"D:\\mindmerge\\algotest\\functional\\Forgot_pass\\browser\\traces\\temp\\0f4bae9a-138f-4c6f-87ad-96cd35c33ffb"}</msg>
+<arg>chromium</arg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-09-17T17:35:41.910930" elapsed="4.676305"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-09-17T17:35:48.284871" level="INFO">Successfully initialized new page object and opened url: https://algotest.in/login</msg>
+<msg time="2025-09-17T17:35:48.284996" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>${LOGIN_URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-09-17T17:35:46.600225" elapsed="1.685090"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-09-17T17:35:48.291304" level="INFO">Clicks the element 'a:has-text("Forgot Password?")'.</msg>
+<arg>a:has-text("Forgot Password?")</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-09-17T17:35:48.288951" elapsed="1.553995"/>
+</kw>
+<kw name="Wait For URL">
+<msg time="2025-09-17T17:35:49.848501" level="FAIL">No keyword with name 'Wait For URL' found. Did you mean:
+    Browser.Wait For</msg>
+<arg>${RESET_URL}</arg>
+<status status="FAIL" start="2025-09-17T17:35:49.847984" elapsed="0.000665">No keyword with name 'Wait For URL' found. Did you mean:
+    Browser.Wait For</status>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<arg>input[name="phone"]</arg>
+<arg>${VALID_PHONE}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-09-17T17:35:49.849198" elapsed="0.000426"/>
+</kw>
+<kw name="Click" owner="Browser">
+<arg>button:has-text("Get OTP")</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-09-17T17:35:49.850157" elapsed="0.000463"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<arg>text=Enter OTP</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="NOT RUN" start="2025-09-17T17:35:49.852143" elapsed="0.000405"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<arg>input[placeholder="Enter OTP"]</arg>
+<arg>${DUMMY_OTP}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-09-17T17:35:49.853083" elapsed="0.000388"/>
+</kw>
+<kw name="Click" owner="Browser">
+<arg>button:has-text("Verify OTP")</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-09-17T17:35:49.853990" elapsed="0.000394"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<arg>input[placeholder="Password"]</arg>
+<arg>${NEW_PASSWORD}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-09-17T17:35:49.855169" elapsed="0.000397"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<arg>input[placeholder="Confirm Password"]</arg>
+<arg>${NEW_PASSWORD}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-09-17T17:35:49.862804" elapsed="0.000438"/>
+</kw>
+<kw name="Click" owner="Browser">
+<arg>button:has-text("Change Password")</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-09-17T17:35:49.863802" elapsed="0.000450"/>
+</kw>
+<kw name="Wait For URL">
+<arg>${LOGIN_URL}</arg>
+<status status="NOT RUN" start="2025-09-17T17:35:49.864943" elapsed="0.000768"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<arg>input[name="phone"]</arg>
+<arg>${VALID_PHONE}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-09-17T17:35:49.866643" elapsed="0.000539"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<arg>input[name="password"]</arg>
+<arg>${NEW_PASSWORD}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-09-17T17:35:49.870553" elapsed="0.000433"/>
+</kw>
+<kw name="Click" owner="Browser">
+<arg>button:has-text("Login")</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-09-17T17:35:49.871509" elapsed="0.000404"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<arg>text=Dashboard</arg>
+<arg>visible</arg>
+<arg>10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="NOT RUN" start="2025-09-17T17:35:49.872800" elapsed="0.000738"/>
+</kw>
+<kw name="Take Screenshot" owner="Browser">
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<status status="NOT RUN" start="2025-09-17T17:35:49.877575" elapsed="0.000464"/>
+</kw>
+<kw name="Close Browser" owner="Browser">
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2025-09-17T17:35:49.878542" elapsed="0.000440"/>
+</kw>
+<msg time="2025-09-17T17:35:50.455130" level="INFO">Switching context to context=66c18d99-fc8f-45e0-8823-9c3d9efe280d in CURRENT</msg>
+<msg time="2025-09-17T17:35:50.848121" level="INFO">Successfully changed active context: context=66c18d99-fc8f-45e0-8823-9c3d9efe280d</msg>
+<msg time="2025-09-17T17:35:51.627874" level="INFO">Successfully closed Context</msg>
+<doc>Tests the full password reset process from start to finish.</doc>
+<status status="FAIL" start="2025-09-17T17:35:41.901658" elapsed="7.978742">No keyword with name 'Wait For URL' found. Did you mean:
+    Browser.Wait For</status>
+</test>
+<status status="FAIL" start="2025-09-17T17:35:39.268422" elapsed="12.385568"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Pass" id="s1" pass="0" fail="1" skip="0">Pass</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
