@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.13.5 on win32)" generated="2025-09-17T15:59:48.198361" rpa="false" schemaversion="5">
+<suite id="s1" name="Logout Test" source="D:\mindmerge\algotest\functional\logout_test\logout_test.robot">
+<test id="s1-t1" name="Open Dropdown Using Hamburger" line="10">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-09-17T15:59:48.584286" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "D:\\mindmerge\\algotest\\functional\\logout_test\\browser\\traces\\temp\\d3f7dadf-1c3a-4fb0-bcd9-082956ac518d"}</msg>
+<msg time="2025-09-17T15:59:48.625335" level="INFO">Starting Browser process C:\Users\HP\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\index.js using at 127.0.0.1:57390</msg>
+<msg time="2025-09-17T15:59:50.697710" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"D:\\mindmerge\\algotest\\functional\\logout_test\\browser\\traces\\temp\\d3f7dadf-1c3a-4fb0-bcd9-082956ac518d"}</msg>
+<arg>chromium</arg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-09-17T15:59:48.582631" elapsed="2.115438"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-09-17T15:59:52.138743" level="INFO">Successfully initialized new page object and opened url: https://algotest.in/login</msg>
+<msg time="2025-09-17T15:59:52.138842" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>${URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-09-17T15:59:50.710792" elapsed="1.428401"/>
+</kw>
+<kw name="Set Viewport Size" owner="Browser">
+<msg time="2025-09-17T15:59:52.188187" level="INFO">Set viewport size to: [object Object]</msg>
+<arg>width=390</arg>
+<arg>height=844</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Sets current Pages viewport size to specified dimensions.</doc>
+<status status="PASS" start="2025-09-17T15:59:52.139835" elapsed="0.048695"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-09-17T15:59:52.209941" level="INFO">Fills the text '7028471170' in the given field.</msg>
+<arg>input[name="phone"]</arg>
+<arg>${PHONE}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-09-17T15:59:52.207152" elapsed="0.586801"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-09-17T15:59:52.816427" level="INFO">Fills the text 'Shivam@123' in the given field.</msg>
+<arg>input[name="password"]</arg>
+<arg>${PASSWORD}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-09-17T15:59:52.815126" elapsed="0.299473"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-09-17T15:59:53.132037" level="INFO">Clicks the element 'button:has-text("Login")'.</msg>
+<arg>button:has-text("Login")</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-09-17T15:59:53.130681" elapsed="0.369049"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-09-17T15:59:55.159896" level="INFO">Waited for Element with selector text=Dashboard at state visible</msg>
+<arg>text=Dashboard</arg>
+<arg>visible</arg>
+<arg>10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-09-17T15:59:53.500359" elapsed="1.659806"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-09-17T15:59:55.222088" level="INFO">Clicks the element 'svg.size-5[data-slot="icon"]'.</msg>
+<arg>svg.size-5[data-slot="icon"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-09-17T15:59:55.164418" elapsed="3.715965"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-09-17T15:59:58.897445" level="INFO">Waited for Element with selector css=div.shadow-2xl at state visible</msg>
+<arg>css=div.shadow-2xl</arg>
+<arg>visible</arg>
+<arg>10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-09-17T15:59:58.886286" elapsed="0.011442"/>
+</kw>
+<kw name="Take Screenshot" owner="Browser">
+<msg time="2025-09-17T15:59:59.222542" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<status status="PASS" start="2025-09-17T15:59:58.905791" elapsed="0.317208"/>
+</kw>
+<kw name="Close Browser" owner="Browser">
+<msg time="2025-09-17T15:59:59.875817" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-09-17T15:59:59.223804" elapsed="0.652352"/>
+</kw>
+<doc>Verify that clicking the hamburger menu opens dropdown.</doc>
+<status status="PASS" start="2025-09-17T15:59:48.580818" elapsed="11.297307"/>
+</test>
+<status status="PASS" start="2025-09-17T15:59:48.202662" elapsed="11.687608"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Logout Test" id="s1" pass="1" fail="0" skip="0">Logout Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
