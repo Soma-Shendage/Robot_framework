@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.13.5 on win32)" generated="2025-09-17T16:09:14.485097" rpa="false" schemaversion="5">
+<suite id="s1" name="Logout Test" source="D:\mindmerge\algotest\functional\logout_test2\logout_test.robot">
+<test id="s1-t1" name="Verify Logout Functionality" line="12">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-09-17T16:09:14.916494" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "D:\\mindmerge\\algotest\\functional\\logout_test2\\browser\\traces\\temp\\f301c52d-f33a-4c3e-9b80-19cd3bc74c03"}</msg>
+<msg time="2025-09-17T16:09:14.966035" level="INFO">Starting Browser process C:\Users\HP\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\index.js using at 127.0.0.1:58072</msg>
+<msg time="2025-09-17T16:09:17.029270" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"D:\\mindmerge\\algotest\\functional\\logout_test2\\browser\\traces\\temp\\f301c52d-f33a-4c3e-9b80-19cd3bc74c03"}</msg>
+<arg>chromium</arg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-09-17T16:09:14.915111" elapsed="2.114522"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-09-17T16:09:18.782284" level="INFO">Successfully initialized new page object and opened url: https://algotest.in/login</msg>
+<msg time="2025-09-17T16:09:18.782413" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>${URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-09-17T16:09:17.033411" elapsed="1.749334"/>
+</kw>
+<kw name="Set Viewport Size" owner="Browser">
+<msg time="2025-09-17T16:09:18.866946" level="INFO">Set viewport size to: [object Object]</msg>
+<arg>width=390</arg>
+<arg>height=844</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Sets current Pages viewport size to specified dimensions.</doc>
+<status status="PASS" start="2025-09-17T16:09:18.783488" elapsed="0.083759"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-09-17T16:09:18.872855" level="INFO">Fills the text '7028471170' in the given field.</msg>
+<arg>input[name="phone"]</arg>
+<arg>${PHONE}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-09-17T16:09:18.871238" elapsed="0.470365"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-09-17T16:09:19.367497" level="INFO">Fills the text 'Shivam@123' in the given field.</msg>
+<arg>input[name="password"]</arg>
+<arg>${PASSWORD}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-09-17T16:09:19.366028" elapsed="0.164889"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-09-17T16:09:19.535628" level="INFO">Clicks the element 'button:has-text("Login")'.</msg>
+<arg>button:has-text("Login")</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-09-17T16:09:19.533973" elapsed="0.788796"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-09-17T16:09:20.979580" level="INFO">Waited for Element with selector text=Dashboard at state visible</msg>
+<arg>text=Dashboard</arg>
+<arg>visible</arg>
+<arg>10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-09-17T16:09:20.345768" elapsed="0.634234"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-09-17T16:09:20.982156" level="INFO">Clicks the element 'svg.size-5[data-slot="icon"]'.</msg>
+<arg>svg.size-5[data-slot="icon"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-09-17T16:09:20.980750" elapsed="4.525776"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-09-17T16:09:25.535971" level="INFO">Waited for Element with selector css=div.shadow-2xl at state visible</msg>
+<arg>css=div.shadow-2xl</arg>
+<arg>visible</arg>
+<arg>10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-09-17T16:09:25.519053" elapsed="0.017205"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-09-17T16:09:25.727231" level="INFO">Clicks the element 'button:has-text("Logout")'.</msg>
+<arg>button:has-text("Logout")</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-09-17T16:09:25.725084" elapsed="0.264549"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-09-17T16:09:26.520977" level="INFO">Waited for Element with selector button:has-text("Login") at state visible</msg>
+<arg>button:has-text("Login")</arg>
+<arg>visible</arg>
+<arg>10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-09-17T16:09:26.011848" elapsed="0.509420"/>
+</kw>
+<kw name="Take Screenshot" owner="Browser">
+<msg time="2025-09-17T16:09:26.740378" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/logout_successful.png.png" target="_blank"&gt;&lt;img src="browser/screenshot/logout_successful.png.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<arg>filename=logout_successful.png</arg>
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<status status="PASS" start="2025-09-17T16:09:26.581390" elapsed="0.159271"/>
+</kw>
+<kw name="Close Browser" owner="Browser">
+<msg time="2025-09-17T16:09:27.682080" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-09-17T16:09:26.749796" elapsed="0.932492"/>
+</kw>
+<doc>Logs in, opens the dropdown, clicks logout, and verifies successful logout.</doc>
+<status status="PASS" start="2025-09-17T16:09:14.913153" elapsed="12.769687"/>
+</test>
+<status status="PASS" start="2025-09-17T16:09:14.488701" elapsed="13.205878"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Logout Test" id="s1" pass="1" fail="0" skip="0">Logout Test</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-09-17T16:09:14.899881" level="ERROR">Error in file 'D:\mindmerge\algotest\functional\logout_test2\logout_test.robot' on line 4: Importing library 'Browser.Keywords.Locators' failed: ModuleNotFoundError: No module named 'Browser.Keywords'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\HP\AppData\Local\Programs\Python\Python313\Scripts\robot.exe
+  C:\Users\HP\AppData\Local\Programs\Python\Python313\python313.zip
+  C:\Users\HP\AppData\Local\Programs\Python\Python313\DLLs
+  C:\Users\HP\AppData\Local\Programs\Python\Python313\Lib
+  C:\Users\HP\AppData\Local\Programs\Python\Python313
+  C:\Users\HP\AppData\Local\Programs\Python\Python313\Lib\site-packages</msg>
+</errors>
+</robot>
